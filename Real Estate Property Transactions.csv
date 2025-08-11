@@ -1,0 +1,19 @@
+﻿What you need for IRR/XIRR cash flows:
+You need a sequence of actual cash inflows and outflows over time. For example:
+"     ·  When you buy the property → cash outflow (negative),"
+"     ·  When you sell the property → cash inflow (positive),"
+     ·  Possibly interim cash flows like rental income or expenses (optional).
+
+I am missing the purchase price
+
+But I can try to gauge the purchase price from the estimated value and sale price.
+"Provided I assume,"
+"1) If Estimated Value is recorded close to when the property was originally bought, then it could be a reasonable proxy for the purchase price."
+,"Reason: If Estimated Value is recorded near the sale date, it might reflect market appreciation or depreciation, so it won’t represent the original purchase price."
+2) I assume each row in the original dataset only records the sale price and its sale dates. ,,,,,,,,,,,,,,,
+,"Reason: So, I can copy all rows, append the copied rows into this dataset, modify each copied row's Date to an earlier date (pretend it is purchase date), I add a new column called Purchase Price (and each copied row I estimate its purchase price to be ~40-60% of its sale price while keeping its Sale Price NULL). Finally copy all Purchase Price that I filled in each copied row onto the original rows so that each original rows will have Sale Price and Purchase Price.",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
