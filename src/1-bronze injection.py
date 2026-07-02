@@ -6,7 +6,7 @@ def run():
 
     spark = SparkSession.builder.getOrCreate()
 
-    csv_path = "/Volumes/workspace/github/realestatedata/Real Estate Property Transactions.csv"
+    csv_path = "/Volumes/workspace/github/realestatedata/V3.csv"
 
     bronze_df = (
         spark.read
